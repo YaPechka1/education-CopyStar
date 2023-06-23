@@ -1,0 +1,65 @@
+.where{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:20px
+}
+.where > .map{
+    width: 40%;
+    box-shadow: 5px 5px 0 #BF988F, -5px -5px 0 #F1E0D6;
+}
+.where > .address{
+    width: 40%;
+    box-shadow: 5px 5px 0 #BF988F, -5px -5px 0 #F1E0D6;
+}
+.where > .map > img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+.address td{
+    padding: 7px;
+    font-size: 20px;
+} 
+.address > table tr:nth-child(2n+1){
+    background-color: #595775;
+    color: white;
+}
+.address > table tr:first-child{
+    background-color: #2d2c3b;
+    color: white;
+}
+@media(max-width:980px) {
+    .where{
+        flex-direction: column;
+        margin:25px 0;
+    }
+    .where > .map,.where > .address{
+        width: 85%;
+
+    }
+}
+@media(max-width:500px){
+    body{
+        overflow-x: hidden;
+    }
+    .where > .address,.where > .map{
+        width: 99%;
+    }
+    table{
+        width: 100%;
+        display: block;
+    }
+    tr{
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        padding: 0%;
+    }
+    td{
+        display: block;
+        width: 100%;
+        padding: 0%;
+
+    }
+}

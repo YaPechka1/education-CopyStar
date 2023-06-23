@@ -1,0 +1,35 @@
+form{
+    margin: 35px auto;
+    width: 33.33%;
+    min-width: 295px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    box-sizing: border-box;
+    padding: 7px;
+    box-shadow: 5px 5px 0 #BF988F, -5px -5px 0 #F1E0D6;
+}
+.message{
+    color: red;
+    text-align: center;
+}
+form > input{
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 7px;
+}
+form > h2{
+    color: #2d2c3b;
+    text-align: center;
+    font-size: 27px;
+
+}
+form > div{
+    display: flex;
+    align-items: center;
+}
+#check{
+    width: 20px;
+    height: 20px;
+}

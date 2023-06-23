@@ -1,0 +1,84 @@
+
+.main_filter{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.filter{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0 #BF988F, -5px -5px 0 #F1E0D6;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.25s;
+
+}
+
+.filter:nth-child(2n+1){
+    background-color: #595775;
+    color: white;
+    
+}
+.filter:nth-child(2n+1):hover{
+    background-color: #BF988F;
+    color: white;
+    box-shadow: -5px -5px 0 #595775, 5px 5px 0 #59577575;
+}
+.filter:nth-child(2n+2):hover{
+    background-color: #BF988F;
+    color: white;
+    box-shadow: -5px -5px 0 #595775, 5px 5px 0 #59577575;
+    
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    
+}
+.card{
+    box-shadow: 5px 5px 0 #BF988F, -5px -5px 0 #F1E0D6;
+    width: calc(25% - 15px);
+    min-width: 285px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    align-items: center;
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: -5px -5px 0 #BF988F, 5px 5px 0 #595775;
+}
+.card > img{
+    width: 100%;
+}
+.card >h4{
+    font-size: 25px;
+    color: #2d2c3b;
+}
+.price{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+#count{
+    font-size: 23px;
+}
